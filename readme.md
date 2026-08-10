@@ -1,6 +1,16 @@
-## Code Formatting Setup (Prettier + VS Code)
+# A11y Fix It
 
-This project uses Prettier for consistent formatting across HTML, CSS, JavaScript, JSONC, and Markdown.
+This project includes a set of components that are inaccessible. The goal is to fix the code so they are accessible and to fix any other accessibility issues found on the page.
+
+You will work locally on your own copy, but you can also <a href="https://uw-ats.github.io/a11y-fixit/">view the exercise page here</a>.
+
+## Set up
+
+Clone or download the zip drive for the project via the Code selection box. Set up to work locally. The project uses JavaScript modules so you will need a local web server to run in the browser.
+
+## For contributors: Code Formatting Setup (Prettier + VS Code)
+
+This project uses Prettier for consistent formatting across HTML, CSS, JavaScript, JSONC, and Markdown. Please set up the following if contributing to the project
 
 ### 1. Install the required VS Code extension
 
