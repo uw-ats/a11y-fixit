@@ -6,7 +6,7 @@ You will work locally on your own copy, but you can also <a href="https://uw-ats
 
 ## Set up
 
-Clone or download the zip drive for the project via the Code selection box. Set up to work locally. The project uses JavaScript modules so you will need a local web server to run in the browser.
+Clone or download the zip drive for the project via the Code selection box. Set up to work locally. The project uses JavaScript modules so you will need a local web server to run in the browser. If you are using Visual Studio Code for your IDE, the Live Preview extension by Microsoft is a good option.
 
 ## For contributors: Code Formatting Setup (Prettier + VS Code)
 
