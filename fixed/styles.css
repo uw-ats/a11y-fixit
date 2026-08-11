@@ -23,6 +23,19 @@
     outline-offset: 2px;
   }
 }
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 body {
   background-color: var(--page-bg);
   color: var(--page-text);
@@ -301,23 +314,47 @@ h2 {
     img {
       width: 144px;
     }
+    .bear-figure {
+      display: inline-block;
+      margin: 0;
+      position: relative;
+
+      .bear-back-link {
+        left: 36%;
+        position: absolute;
+        top: 37%;
+        width: 42%;
+        height: 42%;
+        z-index: 2;
+      }
+
+      .bear-back-link:focus-visible {
+        /* alternative to the default focus outline for better visibility 
+        outline: 3px solid var(--focus-color);
+        outline-offset: 3px; */
+        /* hiding default focus because the focus-visible style is already applied to the bear-back-link + svg path.belly */
+        outline: none;
+      }
+
+      .bear-back-link:is(:focus, :focus-visible, :hover) + svg path.belly {
+        fill: #2ad2c9;
+        stroke: #e93cac;
+        stroke-width: 10px;
+      }
+    }
     svg {
       width: 144px;
+      display: block;
       .cls-1 {
         fill: #000;
       }
       .cls-2 {
         fill: #fff;
       }
-      text{
+      text {
         fill: #000;
         font-size: 1.75em;
         font-family: "Open Sans", sans-serif;
-      }
-      a:focus path.belly, a:hover path.belly {
-        stroke-width: 10px;
-        stroke: #e93cac;
-        fill: #2ad2c9;
       }
     }
   }
