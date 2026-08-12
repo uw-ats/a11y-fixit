@@ -355,16 +355,20 @@
               </dd>
             </dl>
           </div>
-          <figure class="bear-figure">
+          <div class="bear-figure">
             <a class="bear-back-link" href="../">
               <span class="sr-only">Back to Fix-it</span>
             </a>
+            <!-- 
+                1. The bear image itself is decorative and not focusable, only the link superimposed on the tummy is -- so we hide the image from assistive technologies.
+                2. focusable="false" is needed for IE11 and Edge to prevent the SVG from being focusable.
+              -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 300 475"
-              aria-labelledby="coder-bear-title"
+              aria-hidden="true"
+              focusable="false"
             >
-              <title id="coder-bear-title">Friendly, waving cartoon bear</title>
               <g>
                 <path
                   class="cls-2"
@@ -474,7 +478,8 @@
               <text x="128" y="255" aria-hidden="true">to</text>
               <text x="128" y="335" aria-hidden="true">Fix-it</text>
             </svg>
-          </figure>
+          </div>
+          <!-- end .bear-figure -->
         </aside>
       </div>
 
